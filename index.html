@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半｜錬金術式AIブリーフィング 漫画UI版</title>
+  <title>Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半 / Day5前半・後半｜錬金術式AIブリーフィング 漫画UI版</title>
   <style>
     :root{
       --bg0:#050505;
@@ -655,8 +655,8 @@
 
   <div class="app">
     <aside class="side">
-      <div class="sideTitle">Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半<br>錬金術式AI育成ファイル</div>
-      <p class="sideMeta">Day1はAIと簿記自動化、Day2はCanvaと簿記AI、Day3は帳簿と伝票、Day4は現金管理・現金過不足・銀行勘定調整表を漫画UIで初心者向けに再錬成した版。</p>
+      <div class="sideTitle">Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半 / Day5前半・後半<br>錬金術式AI育成ファイル</div>
+      <p class="sideMeta">Day1はAIと簿記自動化、Day2はCanvaと簿記AI、Day3は帳簿と伝票、Day4は現金管理、Day5は商品売買・三分法・返品諸掛り・商品有高帳・クレジット売掛金を漫画UIで初心者向けに再錬成した版。</p>
       <div class="badgeRow">
         <span class="badge">📁 <b>DAY1</b></span>
         <span class="badge">⚖ <b>EQUIVALENT</b></span>
@@ -771,6 +771,34 @@
           <a href="#sec52">5. 銀行勘定調整表</a>
           <a href="#sec53">6. 仕訳するズレ・しないズレ</a>
           <a href="#sec54">7. 今日の5分実践と動画リンク</a>
+        </div>
+      </details>
+
+      <details>
+        <summary><span>Day5前半</span><i class="chev"></i></summary>
+        <div class="menuLinks">
+          <a href="#day5a-hero">トップ：商品売買の基本</a>
+          <a href="#sec55">1. 商品売買の全体像</a>
+          <a href="#sec56">2. 三分法</a>
+          <a href="#sec57">3. 分記法との違い</a>
+          <a href="#sec58">4. 売掛金と買掛金</a>
+          <a href="#sec59">5. 未収入金・未払金との使い分け</a>
+          <a href="#sec60">6. 理解度チェック</a>
+          <a href="#sec61">7. 今日の5分実践と動画リンク</a>
+        </div>
+      </details>
+
+      <details>
+        <summary><span>Day5後半</span><i class="chev"></i></summary>
+        <div class="menuLinks">
+          <a href="#day5b-hero">トップ：返品・諸掛り・在庫・カード決済</a>
+          <a href="#sec62">1. 商品売買のやり直しと追加コスト</a>
+          <a href="#sec63">2. 返品：仕訳を逆にする</a>
+          <a href="#sec64">3. 諸掛り：送料の扱い</a>
+          <a href="#sec65">4. 商品有高帳</a>
+          <a href="#sec66">5. 先入先出法と移動平均法</a>
+          <a href="#sec67">6. クレジット売掛金</a>
+          <a href="#sec68">7. 今日の5分実践と動画リンク</a>
         </div>
       </details>
 
@@ -2307,8 +2335,398 @@
         </section>
 
 
+
+        <section class="hero" id="day5a-hero" style="margin-top:22px;">
+          <span class="eyebrow">DAY5 FRONT / MERCHANDISE SALES ALCHEMY FILE</span>
+          <h1>Day5前半｜商品売買は、三分法で普段はサボって決算で一気に締める。</h1>
+          <p class="lead">
+            Day5前半は、商品売買（モノを仕入れて売る商売）の基本、三分法（仕入・売上・繰越商品の3つで利益を計算する方法）、
+            分記法（売るたびに利益を計算する方法）、売掛金（商品を売って後でもらう権利）、買掛金（商品を仕入れて後で払う義務）を整理する回だ。
+            商売の記録は、全部を毎回完璧に計算するより、期中（普段の営業中）はシンプルに記録し、決算（年末の総まとめ）で在庫を数えて利益を確定するのが現実的だ。
+          </p>
+          <div class="themeStrip">
+            <span class="themePill">📦 商品売買＝モノの売り買い</span>
+            <span class="themePill">🧮 三分法＝仕入・売上・繰越商品</span>
+            <span class="themePill">⏳ 利益計算＝決算で一気に締める</span>
+            <span class="themePill">🤝 掛け取引＝商売用のツケ</span>
+          </div>
+          <div class="dangerPanel">
+            <div class="title">⚠ TABOO WARNING / 売掛金・買掛金を何でも使うな</div>
+            <p>
+              売掛金と買掛金は、商品売買のツケ専用だ。店で売るための商品ではなく、パソコンや冷蔵庫など事業で使う物を後払いで買った場合は、買掛金ではなく未払金を使う。
+              商品以外を後で売ってお金をもらう場合は、売掛金ではなく未収入金を使う。箱を間違えると帳簿の錬成陣がバグる。
+            </p>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec55">
+          <h2>55. 商品売買の全体像：商売の錬成ループ</h2>
+          <p class="chapterLead">
+            商品売買は、商品を仕入れて、売って、売れ残りを数えて、最終的な利益を出す流れだ。初心者は「仕入・売上・在庫」の3点で見ると迷いにくい。
+          </p>
+
+          <div class="mangaPanel">
+            <span class="panelLabel">SCENE 49 / 商売の錬成ループ</span>
+            <div class="dialogue">
+              <div class="line">
+                <div class="face"><img src="./edward.png" alt="エドワード"></div>
+                <div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>商品売買って、要するに買って売るだけだろ？ なんで簿記になると急にややこしくなるんだ。</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./hughes.png" alt="ヒューズ"></div>
+                <div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>商売では、買った商品が全部すぐ売れるとは限らない。だから、いくら仕入れたか、いくら売ったか、最後にどれだけ残ったかを分けて見る必要がある。</p></div>
+              </div>
+              <div class="line">
+                <div class="face"><img src="./winry.png" alt="ウインリー"></div>
+                <div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>工具や部品の在庫管理と同じね。買った数、売れた数、残った数を見ないと、本当にいくら儲かったか分からないの。</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./alphonse.png" alt="アルフォンス"></div>
+                <div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>つまり、商品売買の利益は「売上」だけじゃなくて、「売れた商品の原価」を考えないと出せないんだね。</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="infoGrid">
+            <div class="card"><b>仕入</b><p>売るための商品を買った金額。三分法では、普段は仕入として記録する。</p></div>
+            <div class="card"><b>売上</b><p>商品を売って得た金額。現金でも後払いでも、商品を売れば売上になる。</p></div>
+            <div class="card"><b>繰越商品</b><p>決算日に残っている売れ残り在庫。次の期間へ繰り越す商品。</p></div>
+            <div class="card"><b>売上原価</b><p>売れた商品の仕入コスト。利益計算では、売上から売上原価を引く。</p></div>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec56">
+          <h2>56. 三分法：仕入・売上・繰越商品で決算に一気に締める</h2>
+          <p class="chapterLead">
+            三分法は、普段は仕入と売上を分けて記録し、決算で残った商品を数えて、売れた商品の原価を計算する方法だ。
+          </p>
+
+          <div class="mangaPanel">
+            <span class="panelLabel">SCENE 50 / 最強の時短錬成</span>
+            <div class="dialogue">
+              <div class="line">
+                <div class="face"><img src="./edward.png" alt="エドワード"></div>
+                <div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>三分法って、名前は偉そうだけど何を三つに分けてるんだ？</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./hughes.png" alt="ヒューズ"></div>
+                <div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>仕入、売上、繰越商品だ。普段は仕入と売上だけを記録し、決算で残った繰越商品を使って売上原価を計算する。</p></div>
+              </div>
+              <div class="line">
+                <div class="face"><img src="./winry.png" alt="ウインリー"></div>
+                <div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>毎回「この取引でいくら儲かったか」を計算しないから、日々の記録はかなり楽になるわ。</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./alphonse.png" alt="アルフォンス"></div>
+                <div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>その代わり、期中の正確な利益は分かりにくいんだね。決算で在庫を数えて、ようやく利益がはっきりするんだ。</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow">
+            <div class="step"><div class="num">1</div><h3>仕入れる</h3><p>商品を買ったら、仕入として記録する。</p></div>
+            <div class="step"><div class="num">2</div><h3>売る</h3><p>商品を売ったら、売上として記録する。</p></div>
+            <div class="step"><div class="num">3</div><h3>在庫を数える</h3><p>決算で売れ残った商品を数える。</p></div>
+            <div class="step"><div class="num">4</div><h3>利益を出す</h3><p>売れた商品の原価を計算し、売上から引く。</p></div>
+          </div>
+
+          <div class="dangerPanel">
+            <div class="title">⚠ 三分法の弱点</div>
+            <p>期中は仕入と売上を記録するだけなので、リアルタイムの正確な利益は分かりにくい。途中で利益を知りたいなら、月末などに仮の在庫チェックを行う。</p>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec57">
+          <h2>57. 分記法との違い：毎回利益計算するか、決算まで待つか</h2>
+          <p class="chapterLead">
+            分記法は、商品を売るたびに原価と利益を分けて記録する方法だ。理屈は分かりやすいが、取引が多い商売では手間が重い。
+          </p>
+
+          <div class="mangaPanel">
+            <span class="panelLabel">SCENE 51 / バカ真面目な錬成</span>
+            <div class="dialogue">
+              <div class="line">
+                <div class="face"><img src="./winry.png" alt="ウインリー"></div>
+                <div class="bubble"><div class="speaker">ウインリー <span class="roleTag">初心者目線</span></div><p>分記法は、売るたびに利益を計算する方法よね。正確そうだけど、面倒そう。</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./edward.png" alt="エドワード"></div>
+                <div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>毎回利益計算なんて、商品が何百個も売れたら終わるだろ。錬成陣を書く前に手が死ぬぞ。</p></div>
+              </div>
+              <div class="line">
+                <div class="face"><img src="./hughes.png" alt="ヒューズ"></div>
+                <div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>だから実務では三分法が便利だ。普段は仕入と売上を記録し、利益計算は決算でまとめて行う。合理的な省力化だな。</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./alphonse.png" alt="アルフォンス"></div>
+                <div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>三分法はサボりじゃなくて、量が多い商売に合わせた仕組みなんだね。</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="infoGrid">
+            <div class="card"><b>分記法</b><p>売るたびに商品の原価と利益を記録する方法。理屈は明確だが、取引が多いと重い。</p></div>
+            <div class="card"><b>三分法</b><p>期中は仕入と売上を記録し、決算で在庫を数えて利益を計算する方法。</p></div>
+            <div class="card"><b>初心者の覚え方</b><p>分記法は毎回計算。三分法は年末にまとめて計算。</p></div>
+            <div class="card"><b>実務感覚</b><p>大量取引では三分法の方が記録しやすい。</p></div>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec58">
+          <h2>58. 売掛金と買掛金：商売用のツケ</h2>
+          <p class="chapterLead">
+            売掛金は、商品を売って後でお金をもらう権利。買掛金は、商品を仕入れて後でお金を払う義務だ。
+          </p>
+
+          <div class="mangaPanel">
+            <span class="panelLabel">SCENE 52 / 商売用のツケ</span>
+            <div class="dialogue">
+              <div class="line">
+                <div class="face"><img src="./edward.png" alt="エドワード"></div>
+                <div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>売掛金と買掛金って、どっちも後払いの話だろ？ 名前が似すぎて罠だろこれ。</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./hughes.png" alt="ヒューズ"></div>
+                <div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>売掛金は、商品を売って後でもらう権利。買掛金は、商品を仕入れて後で払う義務だ。売った側か、買った側かで見る。</p></div>
+              </div>
+              <div class="line">
+                <div class="face"><img src="./alphonse.png" alt="アルフォンス"></div>
+                <div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>売掛金は資産（あとでお金をもらえるもの）。買掛金は負債（あとでお金を払うもの）なんだね。</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./winry.png" alt="ウインリー"></div>
+                <div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>ただし、この2つは商品売買のツケ専用。商品じゃない物の後払いに使うと危ないわ。</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow">
+            <div class="step"><div class="num">売</div><h3>売掛金</h3><p>商品を売り、代金を後でもらう権利。</p></div>
+            <div class="step"><div class="num">買</div><h3>買掛金</h3><p>商品を仕入れ、代金を後で払う義務。</p></div>
+            <div class="step"><div class="num">資</div><h3>資産</h3><p>売掛金はあとで回収できるので資産。</p></div>
+            <div class="step"><div class="num">負</div><h3>負債</h3><p>買掛金はあとで支払うので負債。</p></div>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec59">
+          <h2>59. 未収入金・未払金との使い分け：商品以外のツケは別の箱</h2>
+          <p class="chapterLead">
+            売掛金・買掛金は、商品売買に使う科目だ。商品以外の後払い・後日回収には、未払金や未収入金を使う。
+          </p>
+
+          <div class="mangaPanel">
+            <span class="panelLabel">SCENE 53 / 箱を間違えるな</span>
+            <div class="dialogue">
+              <div class="line">
+                <div class="face"><img src="./winry.png" alt="ウインリー"></div>
+                <div class="bubble"><div class="speaker">ウインリー <span class="roleTag">初心者目線</span></div><p>じゃあ、店で使う冷蔵庫を後払いで買ったら買掛金？</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./edward.png" alt="エドワード"></div>
+                <div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>商品を買ったわけじゃないから、買掛金じゃない。未払金だな。危ねえ、名前だけで判断すると爆発するぞ。</p></div>
+              </div>
+              <div class="line">
+                <div class="face"><img src="./hughes.png" alt="ヒューズ"></div>
+                <div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>正解だ。商品以外を後払いで買ったら未払金。商品以外を売って後で代金をもらうなら未収入金。売掛金・買掛金は商品売買専用と覚えろ。</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./alphonse.png" alt="アルフォンス"></div>
+                <div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>お客さんに売るための商品かどうかが、判断の境目なんだね。</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="infoGrid">
+            <div class="card"><b>売掛金</b><p>商品を売って、代金を後でもらう権利。</p></div>
+            <div class="card"><b>買掛金</b><p>商品を仕入れて、代金を後で払う義務。</p></div>
+            <div class="card"><b>未収入金</b><p>商品以外を売って、代金を後でもらう権利。</p></div>
+            <div class="card"><b>未払金</b><p>商品以外を買って、代金を後で払う義務。</p></div>
+          </div>
+
+          <div class="dangerPanel">
+            <div class="title">⚠ 商品かどうかで箱を分ける</div>
+            <p>売掛金・買掛金は、商品売買専用。パソコン、車、冷蔵庫、備品など、売るための商品ではない物の後払いは未払金。商品以外の売却代金を後でもらう場合は未収入金。</p>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec60">
+          <h2>60. 理解度チェック：後払いの箱を選べ</h2>
+          <p class="chapterLead">
+            商品売買の簿記では、「商品か、商品以外か」を見分けることが重要だ。ここを間違えると、売掛金・買掛金の使い方が崩れる。
+          </p>
+
+          <div class="mangaPanel">
+            <span class="panelLabel">SCENE 54 / ブラザーへの問い</span>
+            <div class="dialogue">
+              <div class="line">
+                <div class="face"><img src="./hughes.png" alt="ヒューズ"></div>
+                <div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">出題役</span></div><p>問題だ。店で売るための商品を後払いで仕入れた。使う科目はどれだ？</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./winry.png" alt="ウインリー"></div>
+                <div class="bubble"><div class="speaker">ウインリー <span class="roleTag">選択肢</span></div><p>1. 買掛金<br>2. 未払金</p></div>
+              </div>
+              <div class="line">
+                <div class="face"><img src="./edward.png" alt="エドワード"></div>
+                <div class="bubble"><div class="speaker">エドワード <span class="roleTag">回答役</span></div><p>答えは1番、買掛金だ。売るための商品を仕入れて後払いだからな。</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./alphonse.png" alt="アルフォンス"></div>
+                <div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>もし店で使うパソコンを後払いで買ったなら、商品じゃないから未払金になるんだね。</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dangerPanel">
+            <div class="title">⚠ 答え</div>
+            <p>売るための商品を後払いで仕入れたら、買掛金。商品以外を後払いで買ったら、未払金。商品売買のツケかどうかで判断する。</p>
+          </div>
+        </section>
+
+        <section class="chapter linkList" id="sec61">
+          <h2>61. 今日の5分実践と動画リンク</h2>
+          <p class="chapterLead">
+            今日は商品売買の取引を1つ選び、「三分法でどう記録するか」「売掛金・買掛金か、未収入金・未払金か」を判断する。
+          </p>
+
+          <div class="flow">
+            <div class="step"><div class="num">1</div><h3>商品か確認</h3><p>売るための商品か、事業で使う備品かを分ける。</p></div>
+            <div class="step"><div class="num">2</div><h3>現金か掛けか</h3><p>今払った・もらったのか、後払い・後日回収なのかを見る。</p></div>
+            <div class="step"><div class="num">3</div><h3>科目を選ぶ</h3><p>仕入、売上、売掛金、買掛金、未収入金、未払金を判断する。</p></div>
+            <div class="step"><div class="num">4</div><h3>決算を意識</h3><p>三分法では決算で在庫を数えて売上原価を計算する。</p></div>
+          </div>
+
+          <div class="promptBox" id="prompt-day5a-merchandise">以下の商品売買の取引について、簿記初心者にも分かるように整理して。
+
+【取引】
+ここに取引を書く
+
+【出力形式】
+1. 商品売買に関係する取引か
+2. 三分法で使う勘定科目
+3. 売掛金・買掛金を使うか
+4. 未収入金・未払金を使う可能性があるか
+5. 仕訳
+6. 決算で在庫確認が必要か
+7. 初心者が間違えやすい点
+8. 鋼の錬金術師風のたとえ
+
+【制約】
+・専門用語にはカッコで意味を添える
+・商品か商品以外かを必ず確認する
+・不明点は推測で断定しない</div>
+          <div class="copyRow">
+            <span>商品売買・三分法・掛け取引の練習用プロンプト。</span>
+            <button class="copyBtn" data-copy="prompt-day5a-merchandise">コピー</button>
+          </div>
+
+          <div class="dangerPanel">
+            <div class="title">⚠ 結論</div>
+            <p>三分法は、期中は仕入と売上をシンプルに記録し、決算で在庫を数えて利益を出す方法。売掛金・買掛金は商品売買専用で、商品以外のツケは未収入金・未払金を使う。</p>
+          </div>
+
+          <ul>
+            <li>動画1：三分法と商品売買<br><a href="https://youtu.be/BboEGZR2XV8?si=wK7Hq-z6ntCesgpH" target="_blank" rel="noopener noreferrer">https://youtu.be/BboEGZR2XV8?si=wK7Hq-z6ntCesgpH</a></li>
+            <li>動画2：売掛金と買掛金<br><a href="https://www.youtube.com/watch?v=qHPXHWv8xws" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=qHPXHWv8xws</a></li>
+            <li>動画3：未収入金・未払金との使い分け<br><a href="https://youtu.be/NCw9voGKR74?si=cYpDxnPJ3n_4QTMV" target="_blank" rel="noopener noreferrer">https://youtu.be/NCw9voGKR74?si=cYpDxnPJ3n_4QTMV</a></li>
+          </ul>
+        </section>
+
+
+
+        <section class="hero" id="day5b-hero" style="margin-top:22px;">
+          <span class="eyebrow">DAY5 BACK / SALES RETURN & INVENTORY ALCHEMY FILE</span>
+          <h1>Day5後半｜返品・諸掛り・在庫・カード決済。商品売買の事故ポイントを潰せ。</h1>
+          <p class="lead">
+            Day5後半は、返品（買った物や売った物を戻す処理）、諸掛り（商品売買に付いてくる送料などの費用）、商品有高帳（在庫の数量と原価を管理する帳簿）、クレジット売掛金（カード会社から後でもらう権利）を整理する回だ。
+            商品売買では、売れた・買っただけで終わらない。やり直し、送料、在庫、手数料まで正しく記録して初めて、利益がまともに読める。
+          </p>
+          <div class="themeStrip">
+            <span class="themePill">↩️ 返品＝仕訳の逆再生</span>
+            <span class="themePill">🚚 仕入諸掛り＝商品の原価へ上乗せ</span>
+            <span class="themePill">📦 商品有高帳＝在庫の魔導書</span>
+            <span class="themePill">💳 クレジット売掛金＝カード会社からもらう権利</span>
+          </div>
+          <div class="dangerPanel"><div class="title">⚠ TABOO WARNING / 売値と原価を混ぜるな</div>
+            <p>商品有高帳には、売値ではなく原価（自分が仕入れた時の価値）を書く。売値を在庫帳に入れると、在庫の価値が勝手にインフレして、利益計算が崩壊する。</p>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec62">
+          <h2>62. 商品売買のやり直しと追加コスト：等価交換の細部</h2>
+          <p class="chapterLead">商品売買では、返品、送料、在庫、カード決済手数料が利益計算をズラす。ここを雑にすると、帳簿の見た目は整っていても中身がバグる。</p>
+          <div class="mangaPanel"><span class="panelLabel">SCENE 55 / 商品売買の事故ポイント</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>商品売買って、仕入れて売るだけじゃないのか？ なんでまた追加で覚えることが増えるんだよ。</p></div></div>
+            <div class="line right"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>商売にはやり直しがある。返品だ。商品を手に入れるための追加コストもある。諸掛りだ。さらに在庫とカード決済も絡む。</p></div></div>
+            <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>送料は「自分が買う時」なのか「自分が売る時」なのかで処理が変わるの。ここ、雑にすると利益がズレるわ。</p></div></div>
+            <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>カード決済も、売上の全額がそのまま入ってくるわけじゃないんだね。カード会社の手数料が引かれるから。</p></div></div>
+          </div></div>
+          <div class="infoGrid"><div class="card"><b>返品</b><p>取引のやり直し。基本は元の仕訳を逆にして取り消す。</p></div><div class="card"><b>諸掛り</b><p>送料や運賃など、商品売買に付随してかかる費用。</p></div><div class="card"><b>商品有高帳</b><p>商品の数量、単価、残高を原価ベースで管理する帳簿。</p></div><div class="card"><b>クレジット売掛金</b><p>カード会社から後でもらう権利。カード手数料を差し引いて考える。</p></div></div>
+        </section>
+
+        <section class="chapter" id="sec63">
+          <h2>63. 返品：錬成失敗は仕訳を逆にして戻す</h2>
+          <p class="chapterLead">返品は、買った商品を返す、または売った商品が戻ってくる処理だ。考え方はシンプルで、元の仕訳を逆にする。</p>
+          <div class="mangaPanel"><span class="panelLabel">SCENE 56 / 仕訳の逆再生</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>返品って、帳簿では何をするんだ？</p></div></div>
+            <div class="line right"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>基本は元の仕訳を逆にするの。買った時に仕入を増やしたなら、返品では仕入を減らす。売った時に売上を増やしたなら、返品では売上を減らす。</p></div></div>
+            <div class="line"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>返品は「なかったことに近づける処理」だ。借方と貸方を逆にして、取引の効果を打ち消す。錬成陣の逆再生だな。</p></div></div>
+          </div></div>
+          <div class="dangerPanel"><div class="title">⚠ 返品の覚え方</div><p>返品は、元の仕訳の逆。買った側の返品は仕入を減らす。売った側の返品は売上を減らす。「逆再生」と考えれば迷いにくい。</p></div>
+        </section>
+
+        <section class="chapter" id="sec64">
+          <h2>64. 諸掛り：自分が買う時の送料は原価、自分が売る時の送料は費用</h2>
+          <p class="chapterLead">諸掛りは、商品売買に付随してかかる送料や運賃などだ。特に、自分が仕入れる時の送料と、自分が売る時に負担する送料は処理が違う。</p>
+          <div class="mangaPanel"><span class="panelLabel">SCENE 57 / 送料の等価交換</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>送料なんて全部「発送費」でよくね？ どうせ運ぶための金だろ。</p></div></div>
+            <div class="line right"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>それが危険だ。自分が商品を仕入れるために払った送料は、商品を手に入れるためのコストだ。だから仕入原価に含める。</p></div></div>
+            <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>自分が売る時に、お客さんへ送るために負担した送料は発送費（費用）で処理するの。買う時と売る時で役割が違うわ。</p></div></div>
+          </div></div>
+          <div class="infoGrid"><div class="card"><b>仕入諸掛り</b><p>商品を仕入れるためにかかった送料や運賃。仕入原価に含める。</p></div><div class="card"><b>発送費</b><p>商品を売った後、発送のために自分が負担した送料。費用として処理する。</p></div><div class="card"><b>初心者の罠</b><p>仕入時の送料を発送費にしてしまい、商品の本当の原価を低く見積もる。</p></div><div class="card"><b>覚え方</b><p>買うための送料は商品価値。売るための送料は販売費用。</p></div></div>
+        </section>
+
+        <section class="chapter" id="sec65">
+          <h2>65. 商品有高帳：在庫の数と原価を管理する魔導書</h2>
+          <p class="chapterLead">商品有高帳は、商品が何個あり、1個いくらの原価で、合計いくら残っているかを管理する帳簿だ。売値ではなく原価で書く。</p>
+          <div class="mangaPanel"><span class="panelLabel">SCENE 58 / 在庫の魔導書</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>商品有高帳は、在庫の管理ノートよ。受け入れ、払い出し、残高を数量・単価・金額で見るの。</p></div></div>
+            <div class="line right"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>売った時の値段を書けばいいんじゃないのか？ 商売なんだから売値の方が大事だろ。</p></div></div>
+            <div class="line"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>違う。商品有高帳は原価で記録する。在庫の価値は、売れる予定の値段ではなく、仕入れた時の価値で見る。</p></div></div>
+          </div></div>
+          <div class="dangerPanel"><div class="title">⚠ 商品有高帳の禁忌</div><p>商品有高帳には、売値ではなく原価を書く。売値を入れると、在庫の価値が現実より大きく見えて、利益計算が狂う。</p></div>
+        </section>
+
+        <section class="chapter" id="sec66">
+          <h2>66. 先入先出法と移動平均法：在庫の原価をどう決めるか</h2>
+          <p class="chapterLead">同じ商品でも、仕入れたタイミングで原価が変わることがある。その時に、売れた商品の原価をどう計算するかを決める方法が先入先出法と移動平均法だ。</p>
+          <div class="infoGrid"><div class="card"><b>先入先出法</b><p>先に仕入れた商品から先に売れたと考えて、売れた商品の原価を計算する方法。</p></div><div class="card"><b>移動平均法</b><p>新しく仕入れるたびに、在庫全体の平均単価を計算し直す方法。</p></div><div class="card"><b>共通点</b><p>どちらも在庫を原価で管理するための方法。売値では計算しない。</p></div><div class="card"><b>初心者の覚え方</b><p>古い順に出すなら先入先出。混ぜて平均なら移動平均。</p></div></div>
+        </section>
+
+        <section class="chapter" id="sec67">
+          <h2>67. クレジット売掛金：カード会社を介したツケ払い</h2>
+          <p class="chapterLead">クレジット販売では、商品を売った相手から直接お金をもらうのではなく、カード会社から後で入金される。そのため、普通の売掛金とは分けてクレジット売掛金を使う。</p>
+          <div class="mangaPanel"><span class="panelLabel">SCENE 60 / 中央司令部を介した入金</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>カードで売ったら、普通の売掛金でいいんじゃないのか？ 後でもらう権利だろ？</p></div></div>
+            <div class="line right"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>相手が違う。普通の売掛金は、お客から後でもらう権利。クレジット売掛金は、カード会社から後でもらう権利だ。だから分ける。</p></div></div>
+            <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>しかもカード会社は手数料を引くの。だから売上全額がそのまま入金されると思うと、実際の入金額とズレるわ。</p></div></div>
+            <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>売上は本来の販売額、支払手数料はカード会社に払う費用、クレジット売掛金は差し引き後にもらう額なんだね。</p></div></div>
+          </div></div>
+        </section>
+
+        <section class="chapter linkList" id="sec68">
+          <h2>68. 今日の5分実践と動画リンク</h2>
+          <p class="chapterLead">今日は、返品・送料・在庫・カード手数料のどこで利益がズレるかを見る。商品売買は、細部をサボると最終利益が壊れる。</p>
+          <div class="flow"><div class="step"><div class="num">1</div><h3>返品を見る</h3><p>元の仕訳を逆にできるか確認する。</p></div><div class="step"><div class="num">2</div><h3>送料を見る</h3><p>買うための送料か、売るための送料かを分ける。</p></div><div class="step"><div class="num">3</div><h3>在庫を見る</h3><p>商品有高帳には原価を書くと覚える。</p></div><div class="step"><div class="num">4</div><h3>カードを見る</h3><p>クレジット売掛金と支払手数料を分ける。</p></div></div>
+          <div class="promptBox" id="prompt-day5b-sales-detail">以下の商品売買取引について、簿記初心者にも分かるように整理して。\n\n【取引】\nここに取引を書く\n\n【出力形式】\n1. 返品があるか\n2. 諸掛りがあるか\n3. その諸掛りは仕入原価か発送費か\n4. 商品有高帳へ書く場合、原価か売値か\n5. クレジット販売なら、クレジット売掛金と支払手数料の考え方\n6. 仕訳例\n7. 初心者が間違えやすい点\n8. 鋼の錬金術師風のたとえ\n\n【制約】\n・専門用語にはカッコで意味を添える\n・不明点は推測で断定しない\n・売値と原価を混同しないように説明する</div>
+          <div class="copyRow"><span>返品・諸掛り・商品有高帳・クレジット売掛金の練習用プロンプト。</span><button class="copyBtn" data-copy="prompt-day5b-sales-detail">コピー</button></div>
+          <div class="dangerPanel"><div class="title">⚠ 結論</div><p>返品は逆仕訳。買う時の送料は仕入原価、売る時の送料は発送費。商品有高帳は原価で書く。カード販売はクレジット売掛金と支払手数料を分ける。</p></div>
+          <ul><li>動画1：返品と諸掛り<br><a href="https://youtu.be/8YeucmRVqbw?si=6ZuAmDYOmB-YfPAy" target="_blank" rel="noopener noreferrer">https://youtu.be/8YeucmRVqbw?si=6ZuAmDYOmB-YfPAy</a></li><li>動画2：商品有高帳<br><a href="https://youtu.be/fai9jxaXIho?si=-If1QxtpMmC2H6nd" target="_blank" rel="noopener noreferrer">https://youtu.be/fai9jxaXIho?si=-If1QxtpMmC2H6nd</a></li><li>動画3：クレジット売掛金<br><a href="https://www.youtube.com/watch?v=wmihafdKezA" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=wmihafdKezA</a></li></ul>
+        </section>
+
+
         <footer>
-          <div>Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半｜漫画UI版 / 錬金術式AI育成ファイル</div>
+          <div>Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半 / Day5前半・後半｜漫画UI版 / 錬金術式AI育成ファイル</div>
           <div>static HTML / local PNG / left-right speech bubbles / standing character rail / taboo warning panel / closed dropdown menus</div>
         </footer>
       </div>
@@ -2336,7 +2754,7 @@
 
       <div class="mission">
         <b>MISSION</b><br>
-        AI・Canva・会計ソフトは速い。だが、現実照合・規約確認・最終責任は人間が持つ。
+        AI・Canva・会計ソフトは速い。だが、返品・在庫・手数料のルール確認と最終責任は人間が持つ。
       </div>
     </aside>
   </div>
