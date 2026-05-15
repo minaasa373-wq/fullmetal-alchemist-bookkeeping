@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半 / Day5前半・後半｜錬金術式AIブリーフィング 漫画UI版</title>
+  <title>Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半 / Day5前半・後半 / Day6前半・後半｜錬金術式AIブリーフィング 漫画UI版</title>
   <style>
     :root{
       --bg0:#050505;
@@ -655,8 +655,8 @@
 
   <div class="app">
     <aside class="side">
-      <div class="sideTitle">Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半 / Day5前半・後半<br>錬金術式AI育成ファイル</div>
-      <p class="sideMeta">Day1はAIと簿記自動化、Day2はCanvaと簿記AI、Day3は帳簿と伝票、Day4は現金管理、Day5は商品売買・三分法・返品諸掛り・商品有高帳・クレジット売掛金を漫画UIで初心者向けに再錬成した版。</p>
+      <div class="sideTitle">Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半 / Day5前半・後半 / Day6前半・後半<br>錬金術式AI育成ファイル</div>
+      <p class="sideMeta">Day1はAIと簿記自動化、Day2はCanvaと簿記AI、Day3は帳簿と伝票、Day4は現金管理、Day5は商品売買、Day6は固定資産・減価償却・売却・除却・買い替えを漫画UIで初心者向けに再錬成した版。</p>
       <div class="badgeRow">
         <span class="badge">📁 <b>DAY1</b></span>
         <span class="badge">⚖ <b>EQUIVALENT</b></span>
@@ -799,6 +799,34 @@
           <a href="#sec66">5. 先入先出法と移動平均法</a>
           <a href="#sec67">6. クレジット売掛金</a>
           <a href="#sec68">7. 今日の5分実践と動画リンク</a>
+        </div>
+      </details>
+
+      <details>
+        <summary><span>Day6前半</span><i class="chev"></i></summary>
+        <div class="menuLinks">
+          <a href="#day6a-hero">トップ：固定資産と減価償却</a>
+          <a href="#sec69">1. 固定資産の全体像</a>
+          <a href="#sec70">2. 固定資産の購入と付随費用</a>
+          <a href="#sec71">3. 減価償却</a>
+          <a href="#sec72">4. 定額法</a>
+          <a href="#sec73">5. 資本的支出と収益的支出</a>
+          <a href="#sec74">6. 理解度チェック</a>
+          <a href="#sec75">7. 今日の5分実践と動画リンク</a>
+        </div>
+      </details>
+
+      <details>
+        <summary><span>Day6後半</span><i class="chev"></i></summary>
+        <div class="menuLinks">
+          <a href="#day6b-hero">トップ：固定資産の売却・除却</a>
+          <a href="#sec76">1. 固定資産の最後の始末</a>
+          <a href="#sec77">2. 帳簿価格</a>
+          <a href="#sec78">3. 固定資産の売却</a>
+          <a href="#sec79">4. 期中売却と月割計算</a>
+          <a href="#sec80">5. 固定資産の除却</a>
+          <a href="#sec81">6. 買い替え・下取り</a>
+          <a href="#sec82">7. 今日の5分実践と動画リンク</a>
         </div>
       </details>
 
@@ -2725,8 +2753,375 @@
         </section>
 
 
+
+        <section class="hero" id="day6a-hero" style="margin-top:22px;">
+          <span class="eyebrow">DAY6 FRONT / FIXED ASSET ALCHEMY FILE</span>
+          <h1>Day6前半｜固定資産は、一気に経費にするな。何年もかけて価値を減らせ。</h1>
+          <p class="lead">
+            Day6前半は、固定資産（1年以上長く使う大きな財産）、付随費用（買って使える状態にするための手数料や運送料）、
+            減価償却（使う年数に分けて少しずつ経費にするルール）、資本的支出（価値や寿命を伸ばす支出）と収益的支出（元に戻すための修理費）を整理する回だ。
+            長く使う財産は、買った年だけでなく、使う期間全体に影響する。だから「買った瞬間に全部経費」ではなく、使う年数に分けて処理する。
+          </p>
+          <div class="themeStrip">
+            <span class="themePill">🏢 固定資産＝長く使う財産</span>
+            <span class="themePill">🧾 付随費用＝取得価額へ上乗せ</span>
+            <span class="themePill">📉 減価償却＝価値を年ごとに配分</span>
+            <span class="themePill">🔧 支出判断＝パワーアップか修理か</span>
+          </div>
+          <div class="dangerPanel">
+            <div class="title">⚠ TABOO WARNING / 大きな買い物を一気に経費にするな</div>
+            <p>
+              建物・車・備品・パソコンのように長く使う固定資産を、買った年に全額経費として処理すると、その年だけ赤字が大きくなり、翌年以降の成績が不自然になる。
+              固定資産は使う期間に分けて減価償却する。等価交換は、時間にもまたがる。
+            </p>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec69">
+          <h2>69. 固定資産の全体像：何年も使うデカい買い物</h2>
+          <p class="chapterLead">
+            固定資産は、建物・土地・車・機械・パソコンなど、会社が長く使う財産だ。商品と違い、すぐ売るためのものではなく、仕事で使い続けるものとして記録する。
+          </p>
+
+          <div class="mangaPanel">
+            <span class="panelLabel">SCENE 61 / 長く使う錬成素材</span>
+            <div class="dialogue">
+              <div class="line">
+                <div class="face"><img src="./edward.png" alt="エドワード"></div>
+                <div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>固定資産って、要するに高い買い物のことか？ 車とか建物とかパソコンとか。</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./hughes.png" alt="ヒューズ"></div>
+                <div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>近い。正確には、長く使う財産だ。建物、車両、備品、機械装置、土地などが代表例だ。商品みたいに売る目的ではなく、事業で使うために持つ。</p></div>
+              </div>
+              <div class="line">
+                <div class="face"><img src="./winry.png" alt="ウインリー"></div>
+                <div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>工具や機械鎧みたいなものね。今日だけ使う消耗品じゃなくて、長く使って仕事を支える道具なの。</p></div>
+              </div>
+              <div class="line right">
+                <div class="face"><img src="./alphonse.png" alt="アルフォンス"></div>
+                <div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>だから買った年に全部マイナスとして終わらせるんじゃなくて、使う期間に合わせて価値を分けるんだね。</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="infoGrid">
+            <div class="card"><b>固定資産</b><p>1年以上など、長く使う財産。建物、車、機械、備品、土地など。</p></div>
+            <div class="card"><b>有形固定資産</b><p>目に見える、形のある固定資産。建物・車両・機械・備品など。</p></div>
+            <div class="card"><b>商品との違い</b><p>商品は売るためのもの。固定資産は事業で使うためのもの。</p></div>
+            <div class="card"><b>注意点</b><p>長く使うものは、買った年だけの経費として見ない。</p></div>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec70">
+          <h2>70. 固定資産の購入と付随費用：使える状態までの費用を全部乗せる</h2>
+          <p class="chapterLead">固定資産を買った時は、本体価格だけでなく、使える状態にするための付随費用も取得価額（固定資産の帳簿上の価値）に含める。</p>
+          <div class="mangaPanel">
+            <span class="panelLabel">SCENE 62 / 取得価額の錬成</span>
+            <div class="dialogue">
+              <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>パソコンを買ったら、本体代だけ備品にすればいいんじゃないのか？ 設定費とか送料は経費でよくね？</p></div></div>
+              <div class="line right"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>そのパソコンを使える状態にするために必要な費用なら、固定資産の価値に含めるの。機械鎧だって、部品代だけじゃなく調整費まで含めて完成品でしょ。</p></div></div>
+              <div class="line"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>付随費用は、取得価額に含める。本体価格、購入手数料、運送費、据付費、設定費など、使える状態にするための支出が対象だ。</p></div></div>
+              <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>手に入れるため、使えるようにするために払ったお金は、その財産の価値に上乗せするんだね。</p></div></div>
+            </div>
+          </div>
+          <div class="dangerPanel"><div class="title">⚠ 付随費用の禁忌</div><p>固定資産を使える状態にするための費用を、その場の経費として切り離すと、固定資産の本当の取得価額が低く見える。取得に必要だった費用は資産へ含める。</p></div>
+        </section>
+
+        <section class="chapter" id="sec71">
+          <h2>71. 減価償却：年を取ってボロくなる価値を少しずつ経費にする</h2>
+          <p class="chapterLead">減価償却は、固定資産の取得価額を、使う期間にわたって少しずつ費用にしていくルールだ。長く使うものの価値を、時間に分けて配分する。</p>
+          <div class="mangaPanel">
+            <span class="panelLabel">SCENE 63 / 時間にまたがる等価交換</span>
+            <div class="dialogue">
+              <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>100万円の車を買ったなら、その年に100万円の経費でよくね？ 金はその年に払ってるだろ。</p></div></div>
+              <div class="line right"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>そこが会計の考え方だ。車はその年だけでなく、何年も仕事に使う。だから効果がある年に分けて、少しずつ費用化する。これが減価償却だ。</p></div></div>
+              <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>機械鎧も、作った日に全部価値が消えるわけじゃないわ。使うほど摩耗して、少しずつ価値が減っていくでしょ？</p></div></div>
+              <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>買った年だけ赤字にするんじゃなくて、使う年数に分けると、毎年の成績が自然に見えるんだね。</p></div></div>
+            </div>
+          </div>
+          <div class="infoGrid">
+            <div class="card"><b>減価償却</b><p>固定資産の取得価額を、使う年数に分けて少しずつ費用にするルール。</p></div>
+            <div class="card"><b>減価償却費</b><p>その年に費用として記録する、固定資産の価値の減少分。</p></div>
+            <div class="card"><b>なぜ必要か</b><p>長く使う資産の費用を、効果がある期間へ公平に配分するため。</p></div>
+            <div class="card"><b>注意点</b><p>土地は通常、使っても価値が減るとは考えないため、減価償却しない。</p></div>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec72">
+          <h2>72. 定額法：毎年同じ金額ずつ価値を減らす</h2>
+          <p class="chapterLead">定額法は、毎年同じ金額ずつ減価償却費を計上する方法だ。簿記初心者にとって一番イメージしやすい減価償却の計算方法だ。</p>
+          <div class="mangaPanel"><span class="panelLabel">SCENE 64 / 毎年同じだけ削る</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>定額法って、どういう方法なの？</p></div></div>
+            <div class="line right"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>毎年同じ金額を減価償却費にする方法だ。たとえば100万円の車を5年で使うなら、単純化すれば毎年20万円ずつ費用にするイメージだ。</p></div></div>
+            <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>毎年同じだけ削るなら、初心者でもまだ耐えられるな。複雑な術式じゃなくて助かったぜ。</p></div></div>
+            <div class="line right"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>実務では残存価額や耐用年数（何年使えると考えるか）などのルールもあるけど、まずは「毎年同じ額ずつ費用化」で覚えればいいわ。</p></div></div>
+          </div></div>
+          <div class="flow"><div class="step"><div class="num">1</div><h3>取得価額</h3><p>本体価格と付随費用を含めた固定資産の価値を出す。</p></div><div class="step"><div class="num">2</div><h3>使う年数</h3><p>何年に分けて費用化するかを確認する。</p></div><div class="step"><div class="num">3</div><h3>年額計算</h3><p>一定額ずつ、毎年の減価償却費を計算する。</p></div><div class="step"><div class="num">4</div><h3>仕訳</h3><p>減価償却費を費用として記録する。</p></div></div>
+        </section>
+
+        <section class="chapter" id="sec73">
+          <h2>73. 資本的支出と収益的支出：パワーアップか、ただの修理か</h2>
+          <p class="chapterLead">固定資産に後からお金をかけた時、それが価値や寿命を伸ばす支出なら資本的支出、元に戻すだけなら収益的支出として処理する。</p>
+          <div class="mangaPanel"><span class="panelLabel">SCENE 65 / パワーアップか修理か</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>固定資産に後からお金をかける時は、まず「価値が上がったのか」「元に戻しただけなのか」を見るの。</p></div></div>
+            <div class="line right"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>非常階段を付けるのと、割れた窓を直すのじゃ違うってことか。</p></div></div>
+            <div class="line"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>その通り。非常階段や耐震工事のように価値や寿命が伸びるなら資本的支出として資産に加える。雨漏り修理や窓ガラス修理のように元へ戻すだけなら修繕費だ。</p></div></div>
+            <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>基準は「レベルアップしたか、現状維持か」なんだね。</p></div></div>
+          </div></div>
+          <div class="infoGrid"><div class="card"><b>資本的支出</b><p>固定資産の価値や耐用年数を増やす支出。資産の価値に加える。</p></div><div class="card"><b>収益的支出</b><p>固定資産を元の状態に戻すための支出。修繕費としてその年の費用にする。</p></div><div class="card"><b>例：資本的支出</b><p>耐震工事、非常階段の設置、大規模改良など、価値や寿命が増えるもの。</p></div><div class="card"><b>例：収益的支出</b><p>雨漏り修理、割れた窓ガラスの交換、通常のメンテナンスなど。</p></div></div>
+          <div class="dangerPanel"><div class="title">⚠ 判断ミスの危険</div><p>ただの修理を資本的支出にすると、資産価値を水増ししたように見える。逆にパワーアップを修繕費にすると、その年の費用が大きくなりすぎる。現状維持か、それ以上かで切り分ける。</p></div>
+        </section>
+
+        <section class="chapter" id="sec74">
+          <h2>74. 理解度チェック：修理かパワーアップか</h2>
+          <p class="chapterLead">固定資産に後から払ったお金は、「元に戻すだけ」なら修繕費、「価値や寿命が増える」なら資産に加える。</p>
+          <div class="mangaPanel"><span class="panelLabel">SCENE 66 / ブラザーへの問い</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">出題役</span></div><p>問題だ。建物の雨漏りを直した。この支出は、資本的支出か、収益的支出か？</p></div></div>
+            <div class="line right"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">回答役</span></div><p>答えは収益的支出だ。雨漏りを直しただけなら、元の状態に戻す修理だから、修繕費として処理する。</p></div></div>
+            <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>もし耐震工事や増築で建物の価値や寿命が上がったなら、資本的支出として建物の価値に加えるわ。</p></div></div>
+            <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>「元に戻す」なら費用。「レベルアップ」なら資産。これで覚えればいいんだね。</p></div></div>
+          </div></div>
+          <div class="dangerPanel"><div class="title">⚠ 答え</div><p>雨漏り修理は収益的支出。修繕費としてその年の費用にする。資本的支出になるのは、価値や寿命が増える支出だ。</p></div>
+        </section>
+
+        <section class="chapter linkList" id="sec75">
+          <h2>75. 今日の5分実践と動画リンク</h2>
+          <p class="chapterLead">今日は、長く使う財産を「買った時」「使って価値が減る時」「後から修理・改良した時」の3段階で見る。</p>
+          <div class="flow"><div class="step"><div class="num">1</div><h3>取得価額</h3><p>本体価格と付随費用を合計する。</p></div><div class="step"><div class="num">2</div><h3>減価償却</h3><p>使う年数に分けて少しずつ費用化する。</p></div><div class="step"><div class="num">3</div><h3>修理</h3><p>元に戻すだけなら修繕費にする。</p></div><div class="step"><div class="num">4</div><h3>改良</h3><p>価値や寿命が伸びるなら資産に加える。</p></div></div>
+          <div class="promptBox" id="prompt-day6a-fixed-assets">以下の固定資産に関する取引を、簿記初心者にも分かるように整理して。
+
+【取引】
+ここに取引を書く
+
+【出力形式】
+1. 固定資産に該当するか
+2. 取得価額に含める付随費用があるか
+3. 減価償却が必要か
+4. 定額法で考える場合の流れ
+5. 後から支出がある場合、資本的支出か収益的支出か
+6. 仕訳例
+7. 初心者が間違えやすい点
+8. 鋼の錬金術師風のたとえ
+
+【制約】
+・専門用語にはカッコで意味を添える
+・不明点は推測で断定しない
+・一気に経費にするか、何年かに分けるかを必ず説明する</div>
+          <div class="copyRow"><span>固定資産・減価償却・支出判定の練習用プロンプト。</span><button class="copyBtn" data-copy="prompt-day6a-fixed-assets">コピー</button></div>
+          <div class="dangerPanel"><div class="title">⚠ 結論</div><p>固定資産は本体価格と付随費用をまとめて取得価額にする。使う年数に分けて減価償却し、後からの支出は「パワーアップか修理か」で処理を分ける。</p></div>
+          <ul>
+            <li>動画1：固定資産の購入<br><a href="https://youtu.be/MOR8WF5UHqM?si=lMz9DU8XdZGcZzNv" target="_blank" rel="noopener noreferrer">https://youtu.be/MOR8WF5UHqM?si=lMz9DU8XdZGcZzNv</a></li>
+            <li>動画2：減価償却<br><a href="https://www.youtube.com/watch?v=C1tXaGiIyS4" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=C1tXaGiIyS4</a></li>
+            <li>動画3：資本的支出と収益的支出<br><a href="https://youtu.be/pPvP1uFf8Uw?si=_YQiA2CTPTo7s5oc" target="_blank" rel="noopener noreferrer">https://youtu.be/pPvP1uFf8Uw?si=_YQiA2CTPTo7s5oc</a></li>
+          </ul>
+        </section>
+
+
+
+        <section class="hero" id="day6b-hero" style="margin-top:22px;">
+          <span class="eyebrow">DAY6 BACK / FIXED ASSET DISPOSAL FILE</span>
+          <h1>Day6後半｜固定資産の最期は、帳簿価格と売却額で勝敗を決める。</h1>
+          <p class="lead">
+            Day6後半は、固定資産の売却（長く使った財産を売る処理）、期中売却（年度途中で売る処理）、除却（使えなくなった財産を帳簿から消す処理）、
+            買い替え（古い資産を下取りに出して新しい資産を買う処理）を整理する回だ。
+            固定資産は、買った時の値段そのままで見ない。減価償却累計額（これまで価値を減らした合計）を差し引いた帳簿価格（今の帳簿上の価値）で、損益を判定する。
+          </p>
+          <div class="themeStrip">
+            <span class="themePill">📘 帳簿価格＝今の帳簿上の価値</span>
+            <span class="themePill">💰 売却益・売却損＝売却額との差</span>
+            <span class="themePill">🗓️ 期中売却＝売る直前まで償却</span>
+            <span class="themePill">🧹 除却＝幽霊資産を消す</span>
+          </div>
+          <div class="dangerPanel">
+            <div class="title">⚠ TABOO WARNING / 取得原価と売却額をそのまま比べるな</div>
+            <p>
+              固定資産を売った時、買った時の値段と売った値段をそのまま比べるのは禁忌だ。
+              使って価値が減った分を無視すると、売却益・売却損がズレる。
+              必ず「取得原価 − 減価償却累計額」で帳簿価格を出し、売却額と比べる。
+            </p>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec76">
+          <h2>76. 固定資産の最後の始末：売る・捨てる・買い替える</h2>
+          <p class="chapterLead">
+            固定資産は買って終わりではない。最後に売る、捨てる、新しいものへ買い替える時にも、帳簿から正しく消す処理が必要だ。
+          </p>
+
+          <div class="mangaPanel">
+            <span class="panelLabel">SCENE 67 / 道具の最期</span>
+            <div class="dialogue">
+              <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>固定資産って、買って減価償却したら終わりじゃないのか？ まだ続くのかよ。</p></div></div>
+              <div class="line right"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>最後の処理が重要だ。車を売る、機械を捨てる、古い設備を下取りに出す。帳簿上から正しく消さないと、存在しない幽霊資産が残る。</p></div></div>
+              <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>機械鎧も、壊れて使わなくなったなら整備台帳から消すでしょ？ 帳簿も同じ。持ってないものを持っている扱いにしちゃダメなの。</p></div></div>
+              <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>固定資産の最後は、「今の価値を出す」「受け取った金額と比べる」「帳簿から消す」の順番なんだね。</p></div></div>
+            </div>
+          </div>
+
+          <div class="infoGrid">
+            <div class="card"><b>売却</b><p>固定資産を売る処理。帳簿価格と売却額を比べ、売却益・売却損を出す。</p></div>
+            <div class="card"><b>期中売却</b><p>年度途中で売る処理。売る直前までの減価償却費を月割で計算する。</p></div>
+            <div class="card"><b>除却</b><p>使えなくなった固定資産を帳簿から消す処理。残った価値は除却損になる。</p></div>
+            <div class="card"><b>買い替え</b><p>古い資産を下取りに出し、新しい資産を買う処理。売却と購入を合体させた形で考える。</p></div>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec77">
+          <h2>77. 帳簿価格：取得原価から減価償却累計額を引いた今の価値</h2>
+          <p class="chapterLead">
+            帳簿価格は、固定資産の今の帳簿上の価値だ。取得原価から、これまで減らした価値の合計である減価償却累計額を差し引く。
+          </p>
+
+          <div class="mangaPanel"><span class="panelLabel">SCENE 68 / 今の本当の価値</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>100万円で買った車を売るなら、100万円と売った値段を比べればいいんじゃないのか？</p></div></div>
+            <div class="line right"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>違う。長く使った車は、買った時と同じ価値ではない。取得原価から減価償却累計額を差し引いた帳簿価格で比べる。</p></div></div>
+            <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>工具も使えば摩耗するでしょ？ 買った時の値段じゃなく、今どれくらいの価値が残っているかを見るの。</p></div></div>
+            <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>帳簿価格より高く売れたら固定資産売却益、安く売れたら固定資産売却損なんだね。</p></div></div>
+          </div></div>
+
+          <div class="flow">
+            <div class="step"><div class="num">1</div><h3>取得原価</h3><p>買った時の本体価格と付随費用を含めた価値。</p></div>
+            <div class="step"><div class="num">2</div><h3>累計額</h3><p>これまで減価償却で減らした価値の合計。</p></div>
+            <div class="step"><div class="num">3</div><h3>帳簿価格</h3><p>取得原価から減価償却累計額を引いた今の価値。</p></div>
+            <div class="step"><div class="num">4</div><h3>比較</h3><p>売却額と帳簿価格を比べ、益か損かを判断する。</p></div>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec78">
+          <h2>78. 固定資産の売却：帳簿価格と売却額を比べる</h2>
+          <p class="chapterLead">
+            固定資産を売った時は、資産本体と減価償却累計額を帳簿から消し、受け取った金額との差額を固定資産売却益または固定資産売却損で処理する。
+          </p>
+
+          <div class="mangaPanel"><span class="panelLabel">SCENE 69 / 売却益か売却損か</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>売却の仕訳って、何を消すんだ？ 資産の名前だけ消せばいいのか？</p></div></div>
+            <div class="line right"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>資産の取得原価を消し、これまで積み上げた減価償却累計額も消す。受け取った現金や未収入金を記録し、差額を売却益または売却損にする。</p></div></div>
+            <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>売った値段が帳簿価格より高ければ売却益。低ければ売却損。どちらも「固定資産を手放した結果」として記録するの。</p></div></div>
+            <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>買った時の値段じゃなく、帳簿価格と売却額を比べるのが一番大事なんだね。</p></div></div>
+          </div></div>
+
+          <div class="dangerPanel">
+            <div class="title">⚠ 売却の禁忌</div>
+            <p>取得原価と売却額を直接比べない。固定資産売却損益は、帳簿価格と売却額の差で見る。減価償却累計額を消し忘れると帳簿がズレる。</p>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec79">
+          <h2>79. 期中売却と月割計算：売る直前まで使った分を費用にする</h2>
+          <p class="chapterLead">
+            年度の途中で固定資産を売る時は、直近の決算日から売却日までの減価償却費を月割計算で追加してから、売却損益を出す。
+          </p>
+
+          <div class="mangaPanel"><span class="panelLabel">SCENE 70 / 売る直前までの摩耗</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>年度途中で売った場合も、前回の決算時の帳簿価格で比べればいいんじゃないのか？</p></div></div>
+            <div class="line right"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>売る直前まで使っているから、その期間分の価値の減りも計算するの。車も機械も、売る日までちゃんと使っていたでしょ？</p></div></div>
+            <div class="line"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>月割計算で、その年に使った月数分の減価償却費を計上する。1か月未満は切り上げる処理として学習することが多い。</p></div></div>
+            <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>売る前に、その年の使った分を先に償却する。それから帳簿価格を出して、売却額と比べるんだね。</p></div></div>
+          </div></div>
+
+          <div class="infoGrid">
+            <div class="card"><b>期中売却</b><p>会計期間の途中で固定資産を売ること。</p></div>
+            <div class="card"><b>月割計算</b><p>1年分の減価償却費を12か月で割り、使った月数分だけ計算すること。</p></div>
+            <div class="card"><b>手順</b><p>売る直前までの減価償却費を計上し、その後に売却損益を計算する。</p></div>
+            <div class="card"><b>注意点</b><p>売却した年の減価償却費を忘れると、帳簿価格が高く残りすぎる。</p></div>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec80">
+          <h2>80. 固定資産の除却：捨てた道具を帳簿から消す</h2>
+          <p class="chapterLead">
+            固定資産の除却は、使えなくなった固定資産を事業用から外し、帳簿から消す処理だ。残った帳簿価格は固定資産除却損として処理する。
+          </p>
+
+          <div class="mangaPanel"><span class="panelLabel">SCENE 71 / 幽霊資産を消す</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>壊れて捨てたなら、別に何も記録しなくてよくないか？ もう使わないんだし。</p></div></div>
+            <div class="line right"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>それが一番危険だ。記録しないと、帳簿上ではまだその資産を持っていることになる。存在しない幽霊資産が残るぞ。</p></div></div>
+            <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>除却では、資産の取得原価と減価償却累計額を消して、残っていた帳簿価格を固定資産除却損として処理するの。</p></div></div>
+            <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>もしスクラップとして少し価値が残るなら、貯蔵品として一時的に記録することもあるんだね。</p></div></div>
+          </div></div>
+
+          <div class="dangerPanel">
+            <div class="title">⚠ 除却の禁忌</div>
+            <p>捨てたのに帳簿から消さないと、実体のない固定資産が残る。除却したら、取得原価と減価償却累計額を消し、残りは固定資産除却損で処理する。</p>
+          </div>
+        </section>
+
+        <section class="chapter" id="sec81">
+          <h2>81. 買い替え・下取り：古い道具を売って、新しい道具を買う合体錬成</h2>
+          <p class="chapterLead">
+            買い替えは、古い固定資産を下取りに出し、新しい固定資産を買う処理だ。考え方は「古い資産の売却」と「新しい資産の購入」を同時に行うことだ。
+          </p>
+
+          <div class="mangaPanel"><span class="panelLabel">SCENE 72 / 合体錬成</span><div class="dialogue">
+            <div class="line"><div class="face"><img src="./edward.png" alt="エドワード"></div><div class="bubble"><div class="speaker">エドワード <span class="roleTag">ツッコミ役</span></div><p>買い替えって、古いやつを下取りに出して新しいやつを買うだけだろ？ なんで複雑になるんだ？</p></div></div>
+            <div class="line right"><div class="face"><img src="./hughes.png" alt="ヒューズ"></div><div class="bubble"><div class="speaker">ヒューズ <span class="roleTag">先生役</span></div><p>古い資産を手放す処理と、新しい資産を取得する処理が同時に起きるからだ。古い資産は帳簿から消し、新しい資産は取得価額で記録する。</p></div></div>
+            <div class="line"><div class="face"><img src="./winry.png" alt="ウインリー"></div><div class="bubble"><div class="speaker">ウインリー <span class="roleTag">実務サポート</span></div><p>下取り額は、古い資産を売った金額みたいに見るの。帳簿価格より高いか低いかで、売却益や売却損が出ることがあるわ。</p></div></div>
+            <div class="line right"><div class="face"><img src="./alphonse.png" alt="アルフォンス"></div><div class="bubble"><div class="speaker">アルフォンス <span class="roleTag">補足役</span></div><p>「古い道具の売却」と「新しい道具の購入」を分けて考えれば、複雑な仕訳もほどけるんだね。</p></div></div>
+          </div></div>
+
+          <div class="infoGrid">
+            <div class="card"><b>古い資産</b><p>取得原価と減価償却累計額を消し、下取り額との差で売却損益を判断する。</p></div>
+            <div class="card"><b>新しい資産</b><p>新しい固定資産として取得価額を記録する。付随費用があれば含める。</p></div>
+            <div class="card"><b>下取り額</b><p>古い資産を売った金額のように扱う。帳簿価格と比べる。</p></div>
+            <div class="card"><b>覚え方</b><p>買い替えは、売却と購入の合体錬成。</p></div>
+          </div>
+        </section>
+
+        <section class="chapter linkList" id="sec82">
+          <h2>82. 今日の5分実践と動画リンク</h2>
+          <p class="chapterLead">
+            今日は、固定資産の「今の価値」を出してから、売った時・捨てた時・買い替えた時の処理を考える。
+          </p>
+
+          <div class="flow">
+            <div class="step"><div class="num">1</div><h3>帳簿価格</h3><p>取得原価から減価償却累計額を引く。</p></div>
+            <div class="step"><div class="num">2</div><h3>売却</h3><p>売却額と帳簿価格を比べ、益か損か判断する。</p></div>
+            <div class="step"><div class="num">3</div><h3>期中</h3><p>年度途中なら売る直前まで月割で償却する。</p></div>
+            <div class="step"><div class="num">4</div><h3>除却</h3><p>捨てた資産を帳簿から消し、除却損を出す。</p></div>
+          </div>
+
+          <div class="promptBox" id="prompt-day6b-fixed-asset-disposal">以下の固定資産の売却・除却・買い替えについて、簿記初心者にも分かるように整理して。
+
+【取引】
+ここに取引を書く
+
+【出力形式】
+1. 売却 / 期中売却 / 除却 / 買い替え のどれか
+2. 取得原価
+3. 減価償却累計額
+4. 期中売却なら売る直前までの減価償却費
+5. 帳簿価格
+6. 売却額または下取り額
+7. 売却益・売却損・除却損の判断
+8. 仕訳例
+9. 初心者が間違えやすい点
+10. 鋼の錬金術師風のたとえ
+
+【制約】
+・専門用語にはカッコで意味を添える
+・不明点は推測で断定しない
+・取得原価と売却額を直接比べないことを必ず説明する</div>
+          <div class="copyRow">
+            <span>固定資産の売却・除却・買い替えの練習用プロンプト。</span>
+            <button class="copyBtn" data-copy="prompt-day6b-fixed-asset-disposal">コピー</button>
+          </div>
+
+          <div class="dangerPanel">
+            <div class="title">⚠ 結論</div>
+            <p>固定資産の最後は、帳簿価格を出してから判断する。売却額が帳簿価格より高ければ売却益、低ければ売却損。捨てるなら帳簿から消して除却損。買い替えは売却と購入の合体処理だ。</p>
+          </div>
+
+          <ul>
+            <li>動画1：固定資産の売却<br><a href="https://www.youtube.com/watch?v=pbAig18gqpo" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=pbAig18gqpo</a></li>
+            <li>動画2：期中売却の処理<br><a href="https://youtu.be/95gTu-gtf7Y?si=rBm0Sp3NLoK1ey2S" target="_blank" rel="noopener noreferrer">https://youtu.be/95gTu-gtf7Y?si=rBm0Sp3NLoK1ey2S</a></li>
+            <li>動画3：固定資産の除却・買い替え<br><a href="https://youtu.be/GsCpbBK1BM0?si=lY8pfsGyJraSRI6b" target="_blank" rel="noopener noreferrer">https://youtu.be/GsCpbBK1BM0?si=lY8pfsGyJraSRI6b</a></li>
+          </ul>
+        </section>
+
+
         <footer>
-          <div>Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半 / Day5前半・後半｜漫画UI版 / 錬金術式AI育成ファイル</div>
+          <div>Day1前半・後半 / Day2前半・後半 / Day3前半・後半 / Day4前半・後半 / Day5前半・後半 / Day6前半・後半｜漫画UI版 / 錬金術式AI育成ファイル</div>
           <div>static HTML / local PNG / left-right speech bubbles / standing character rail / taboo warning panel / closed dropdown menus</div>
         </footer>
       </div>
@@ -2754,7 +3149,7 @@
 
       <div class="mission">
         <b>MISSION</b><br>
-        AI・Canva・会計ソフトは速い。だが、返品・在庫・手数料のルール確認と最終責任は人間が持つ。
+        AI・Canva・会計ソフトは速い。だが、固定資産の帳簿価格・売却損益・除却判断の最終責任は人間が持つ。
       </div>
     </aside>
   </div>
